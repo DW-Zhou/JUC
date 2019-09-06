@@ -22,7 +22,7 @@ class MyData{
        number++;
     }
 
-    AtomicInteger atomicInteger = new AtomicInteger();
+    AtomicInteger atomicInteger = new AtomicInteger();// 0
     public void addAtomic(){
         atomicInteger.getAndIncrement();
     }
@@ -83,7 +83,5 @@ public class VolatileDemo {
         }
         System.out.println(Thread.currentThread().getName()+"\t mission is over");
     }
-
-
 
 }
